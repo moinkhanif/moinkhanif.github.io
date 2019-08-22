@@ -1,0 +1,2 @@
+[11-Feb-2019 23:26:54 UTC] PHP Warning:  urldecode() expects parameter 1 to be string, array given in /home/irambhqu/moinkhan.info/wp-includes/class-wp-query.php on line 2053
+[11-Feb-2019 23:26:54 UTC] PHP Warning:  preg_match() expects parameter 2 to be string, array given in /home/irambhqu/moinkhan.info/wp-includes/canonical.php on line 206

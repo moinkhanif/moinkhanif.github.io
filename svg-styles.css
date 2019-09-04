@@ -173,3 +173,36 @@
 	.st172{fill:#E5CED4;}
 	.st173{fill:#15104F;}
 	.st174{fill:#E5E3E3;}
+	.container {
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		height: 100vh;
+	}
+	.flowers {
+		width: 300px;
+	}
+	.title {
+		font-family: 'Satisfy', cursive;
+		font-size: 3.5rem;
+		padding: 10px;
+		color: #420000;
+	}
+	.sub-title {
+		padding: 10px;
+		color: #420000;
+	}
+	.social a {
+		display: inline-block;
+		text-decoration: none;
+		color: #420000;
+		padding: 20px;
+	}
+	.social a:hover,.social a:focus{
+		color: #864747;
+	}
+	.social li {
+		list-style: none;
+	}

@@ -24,8 +24,7 @@ nav a:hover, nav a:active{
 header {
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
-    height: 20vh;
+    justify-content: space-between;
 }
 nav {
     display: flex;
@@ -41,7 +40,7 @@ main {
 }
 .alphabetM {
     
-    position: absolute;
+    position: relative;
     left: 100px;
     top: 1px;
 }

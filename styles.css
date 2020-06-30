@@ -6,6 +6,7 @@
 body[data="prod"] {
     background: #17223b;
     color: white;
+    font-family: Arial, Helvetica, sans-serif;
 }
 nav li {
     list-style: none;
@@ -31,15 +32,7 @@ nav {
     justify-content: center;
     
 }
-main {
-    height: 80vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-}
 .alphabetM {
-    
     position: relative;
     left: 100px;
     top: 1px;
@@ -77,4 +70,54 @@ main {
     border-radius: 100%;
     left: 25px;
     transform: rotate(160deg);
+}
+main {
+    min-height: 80vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.welcome {
+  width: 10px;
+  overflow: hidden;
+  display: inline-block;
+  max-width: max-content;
+  white-space: nowrap;
+  animation: typewriting 5s steps(100, end) forwards;
+  animation-delay: 1s;
+  position: relative;
+}
+
+.welcome::after {
+  content: '';
+  width: 10px;
+  height: 100%;
+  background-color: #c8dad3;
+  right: 0px;
+  position: absolute;
+  animation: blink-animation 1s steps(5, start) infinite;
+}
+
+@keyframes typewriting {
+  100% {
+    width: 100%;
+    padding-right: 20px;
+  }
+}
+@-webkit-keyframes typewriting {
+  100% {
+    width: 100%;
+    padding-right: 20px;
+  }
+}
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
 }

@@ -3,7 +3,7 @@
     margin: 0;
     box-sizing: border-box;
 }
-body {
+body[data="prod"] {
     background: #17223b;
     color: white;
 }

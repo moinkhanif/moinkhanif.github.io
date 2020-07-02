@@ -3,15 +3,18 @@
     margin: 0;
     box-sizing: border-box;
 }
+
 body[data="prod"] {
     background: #17223b;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
 }
+
 nav li {
     list-style: none;
     
 }
+
 nav a {
     text-decoration: none;
     display: inline-block;
@@ -19,65 +22,76 @@ nav a {
     color: #f2f6f5;
     font-size: 1.2rem;
 }
+
 nav a:hover, nav a:active{
     color: #c8dad3;
 }
+
 header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
+
 nav {
     display: flex;
     justify-content: center;
     
 }
+
 .alphabetM {
     position: relative;
     left: 100px;
     top: 1px;
 }
-.m1 {
-    height: 100px;
-    width: 30px;
-    position: absolute;
-    background: linear-gradient(to bottom, pink,transparent 90%);
-    transform: rotate(200deg);
-    border-radius: 100%;
-}
-.m2 {
-    height: 80px;
-    width: 30px;
-    position: absolute;
-    background: linear-gradient(to bottom, pink,transparent 90%);
-    border-radius: 100%;
-    transform: rotate(160deg);
-}
-.m3 {
-    height: 80px;
-    width: 30px;
-    position: absolute;
-    background: linear-gradient(to bottom, pink,transparent 90%);
-    border-radius: 100%;
-    left: 25px;
-    transform: rotate(200deg);
-}
+
+.m1,
+.m2,
+.m3,
 .m4 {
-    height: 100px;
-    position: absolute;
-    width: 30px;
-    background: linear-gradient(to bottom, pink,transparent 90%);
-    border-radius: 100%;
+  position: absolute;
+  background: linear-gradient(to bottom, pink,transparent 90%);
+  border-radius: 100%;
+}
+
+.m1,
+.m4 {
+  height: 100px;
+  width: 30px;
+}
+
+.m2,
+.m3 {
+  height: 80px;
+  width: 30px;
+}
+
+.m1 {
+    transform: rotate(200deg);
+}
+
+.m2 {
+    transform: rotate(160deg);
+}
+
+.m3 {
+    left: 25px;
+    transform: rotate(200deg);
+}
+
+.m4 {
     left: 25px;
     transform: rotate(160deg);
 }
+
 .main-content {
-    min-height: 80vh;
+    min-height: 90vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
+
 .welcome {
   width: 10px;
   overflow: hidden;
@@ -101,6 +115,7 @@ nav {
   position: absolute;
   animation: blink-animation 1s steps(5, start) infinite;
 }
+
 .welcome-sub {
   font-size: large;
 }
@@ -111,17 +126,20 @@ nav {
     padding-right: 20px;
   }
 }
+
 @-webkit-keyframes typewriting {
   100% {
     width: 100%;
     padding-right: 20px;
   }
 }
+
 @keyframes blink-animation {
   to {
     visibility: hidden;
   }
 }
+
 @-webkit-keyframes blink-animation {
   to {
     visibility: hidden;

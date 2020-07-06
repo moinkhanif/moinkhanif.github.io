@@ -47,10 +47,19 @@ nav {
   top: 1px;
 }
 
+.alphabetM:hover .m1 {
+  transform: rotate(190deg);
+}
+
+.alphabetM:hover .m4 {
+  transform: rotate(170deg);
+}
+
 .m1, .m2, .m3, .m4 {
   position: absolute;
   background: linear-gradient(to bottom, pink, transparent 90%);
   border-radius: 100%;
+  transition: transform 300ms ease-in-out;
 }
 
 .m1, .m4 {

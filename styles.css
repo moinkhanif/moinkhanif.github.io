@@ -8,6 +8,8 @@ body[data="prod"] {
   background: rgb(47, 46, 65);
   color: white;
   font-family: Arial, Helvetica, sans-serif;
+  max-width: 1500px;
+  margin: auto;
 }
 
 a {
@@ -97,6 +99,10 @@ nav {
   align-items: center;
 }
 
+.section-title {
+  font-size: 2.2rem;
+}
+
 .main-content .blm {
   max-height: 50vh;
   width: 90%;
@@ -166,17 +172,43 @@ nav {
   width: 0;
   position: absolute;
   bottom: -80px;
-  left: 43%;
+  left: 40%;
   border-left: 70px solid transparent;
   border-right: 70px solid transparent;
   border-bottom: 70px solid black;
   border-radius: 50px;
 }
 
-.project article>div {
+.project-content {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
+  margin: 0 10% 0;
+  line-height: 1.7rem;
+  word-spacing: 0.2rem;
+}
+
+.project-title {
+  font-size: 1.6rem;
+  color: rgb(172, 168, 255)
+}
+
+.project-links a {
+  padding: 15px;
+  border-radius: 10px;
+  margin: 0 10px 0;
+  background-color: rgb(121,113,254);
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+.contact-card ul {
+  display: flex;
+  justify-content: center;
+}
+
+.contact-card li {
+  margin: 20px;
 }
 
 @keyframes typewriting {

@@ -202,13 +202,19 @@ nav {
   text-decoration: none;
 }
 
-.contact-card ul {
+.contact-card ul,
+footer {
   display: flex;
   justify-content: center;
 }
 
+footer {
+  padding: 50px;
+}
+
 .contact-card li {
   margin: 20px;
+  font-size: 1.2rem;
 }
 
 @keyframes typewriting {

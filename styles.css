@@ -189,8 +189,9 @@ nav {
   padding: 15px;
   border-radius: 10px;
   margin: 0 10px 0;
-  background-color: rgb(121, 113, 254);
-  color: whitesmoke;
+  background-color: rgb(87, 81, 204);
+  color: #fff;
+  font-weight: bold;
   text-decoration: none;
 }
 
@@ -262,7 +263,7 @@ footer {
   }
 }
 
-@media screen and (max-width: 365px) {
+@media screen and (max-width: 375px) {
   .project figure {
     border: 10px solid #000;
     border-radius: 0;

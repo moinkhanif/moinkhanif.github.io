@@ -46,6 +46,8 @@ nav {
 .alphabetM {
   position: relative;
   left: 100px;
+  width: 100px;
+  height: 100px;
   top: 1px;
 }
 
@@ -139,16 +141,18 @@ nav {
 
 .main-sections {
   text-align: center;
-  padding: 0 50px 0;
 }
 
 .main-sections>* {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 20px 50px;
 }
 
 .project, .project img {
   width: 100%;
+}
+
+.project:nth-child(2n+1) {
+  background-color: rgba(255, 255, 255, 0.103);
 }
 
 .project article {
@@ -166,19 +170,6 @@ nav {
   position: relative;
 }
 
-.project figure::after {
-  content: '';
-  height: 0;
-  width: 0;
-  position: absolute;
-  bottom: -80px;
-  left: 40%;
-  border-left: 70px solid transparent;
-  border-right: 70px solid transparent;
-  border-bottom: 70px solid black;
-  border-radius: 50px;
-}
-
 .project-content {
   display: flex;
   flex-direction: column;
@@ -194,16 +185,16 @@ nav {
 }
 
 .project-links a {
+  display: inline-block;
   padding: 15px;
   border-radius: 10px;
   margin: 0 10px 0;
-  background-color: rgb(121,113,254);
+  background-color: rgb(121, 113, 254);
   color: whitesmoke;
   text-decoration: none;
 }
 
-.contact-card ul,
-footer {
+.contact-card ul, footer {
   display: flex;
   justify-content: center;
 }
@@ -215,6 +206,70 @@ footer {
 .contact-card li {
   margin: 20px;
   font-size: 1.2rem;
+}
+
+.contact-card {
+  margin-top: 20px;
+}
+
+@media screen and (max-width: 970px) {
+  header {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .alphabetM {
+    transform: scale(0.9);
+    left: 0;
+  }
+  nav {
+    margin-top: 50px;
+  }
+  nav a {
+    padding: 5px;
+  }
+  .welcome {
+    font-size: 5vw;
+  }
+  .welcome::after {
+    width: 10px;
+  }
+  .welcome-sub {
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 10px;
+  }
+  .project {
+    margin: 20px auto;
+  }
+  .project article {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .project-content {
+    margin: 0;
+  }
+  .project article>* {
+    width: 100%;
+  }
+  .project figure {
+    border: 5vw solid #000;
+    margin-bottom: 40px;
+  }
+  .project-info {
+    margin: 20px auto;
+  }
+}
+
+@media screen and (max-width: 365px) {
+  .project figure {
+    border: 10px solid #000;
+    border-radius: 0;
+  }
+  .project-links a {
+    margin-bottom: 10px;
+  }
 }
 
 @keyframes typewriting {

@@ -147,6 +147,11 @@ nav {
   padding: 20px 50px;
 }
 
+.nojs-title {
+  color: red;
+  margin-bottom: 10px;
+}
+
 .project {
   border-radius: 10px;
 }

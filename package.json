@@ -1,0 +1,22 @@
+{
+  "name": "moinkhanif.github.io",
+  "version": "1.0.0",
+  "description": "Moin's portfolio website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/moinkhanif/moinkhanif.github.io.git"
+  },
+  "author": "Moin Khan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/moinkhanif/moinkhanif.github.io/issues"
+  },
+  "homepage": "https://github.com/moinkhanif/moinkhanif.github.io#readme",
+  "dependencies": {
+    "dotenv": "^8.2.0"
+  }
+}

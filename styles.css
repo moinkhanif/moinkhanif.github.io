@@ -193,6 +193,17 @@ nav {
   color: rgb(172, 168, 255)
 }
 
+.stack-details {
+  margin: 20px auto 30px;
+}
+
+.stack-details span.stacks {
+  background-color: rgb(131, 31, 151);
+  padding: 10px;
+  margin: auto 10px;
+  border-radius: 10px;
+}
+
 .project-links a {
   display: inline-block;
   padding: 15px;
@@ -276,6 +287,9 @@ footer {
   .project figure {
     border: 10px solid #000;
     border-radius: 0;
+  }
+  .stack-details span {
+    display: block;
   }
   .project-links a {
     margin-bottom: 10px;

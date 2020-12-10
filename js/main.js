@@ -8,7 +8,7 @@ document.querySelectorAll('.main-nav a').forEach((e)=>{
     }
     if (node.getAttribute('href').charAt(0) === '#') {
       e.preventDefault();
-      const item = e.target.innerHTML.toLowerCase()
+      const item = node.firstElementChild.innerHTML.toLowerCase()
       const menu = `#${item}`
       document.querySelector(menu).scrollIntoView({
         behavior: 'smooth',

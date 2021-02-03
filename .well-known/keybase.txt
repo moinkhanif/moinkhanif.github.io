@@ -1,0 +1,68 @@
+==================================================================
+https://keybase.io/moinkhanif
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://moinkhanif.dev
+  * I am moinkhanif (https://keybase.io/moinkhanif) on keybase.
+  * I have a public key with fingerprint DA0F F969 F00F 37AE 657B  8E53 79A0 CF74 1C2D 7719
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0101bb2082104cb2bcc0e579eb7d22cfe685593ab26a5db788ae54880562c4b471990a",
+      "fingerprint": "da0ff969f00f37ae657b8e5379a0cf741c2d7719",
+      "host": "keybase.io",
+      "key_id": "79a0cf741c2d7719",
+      "kid": "0101bb2082104cb2bcc0e579eb7d22cfe685593ab26a5db788ae54880562c4b471990a",
+      "uid": "fbe0105e2e1223bc97e6e90bf6eb7d19",
+      "username": "moinkhanif"
+    },
+    "service": {
+      "hostname": "moinkhanif.dev",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1612365404,
+  "expire_in": 157680000,
+  "prev": "69e7cbba2b50c1b4e103b696823071d9a92e1d350079b6079927bc7d07e43d55",
+  "seqno": 19,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.1.13
+Comment: https://keybase.io/crypto
+
+yMIiAnicrZJbSBVBGMePeUPzRpSZIuhKD+FBZq+zeyoKDSVDgiBfOrnu7M56NnX3
+XL0kpiWIYggd0IQk1AcvFEShgUQXS/ChSCryISJLIjPDRM1KH2pW6qkem4cZ5pv/
+//ddmMnESEd8xOnyhF3d2SNFEY8nekOO8vR77gYKWVo95WqgKvHWgas0HAjKlYZG
+uShAAxohBogMDTgVMUhVAeahhBHUGEbVsSDyvMQqiBEUXkNQFBXMc6IIeIFROcRB
+WpKAQjkp3TArsN/rN8wgwWoK0HVJkHQAdBYqWOAhEjHPQkkBqg45WmU0SLzE6LEC
+toMUh5QAzjMsEiMXeau8f+j/c92hLZyOMCHymME0w7BIlSAWsASQLtjArbyhAPab
+SjUm6mrLMCs9imnoVKOTIvEaQ8X2aO1e/tLkabiG+L1+K2ipVhV58wSD3oDL9gbr
+vba4FiP5N0ZGhqmRWRJHDfYHDMukXDRRqkHD5tICzbACzwHOSeE6r+HHsmEreCiI
+gCw7D0nnogQJQxUhhUE8UGnEYRqwSJAEkWEBpDVJkUivGssDACUkkE1iIFKhBiDm
+WI3nKbsxn2kRtkTqVCoIM2BUmEow5MdU48MH7ihHRLwjJnqb/ckc8XEpf75edlHs
+T/PY7n3ek6fY0qHkgmtL+T2zH5IT825nZh91Hsp6Ma2s98x26MtZTZPygfBm9GBO
+/sLTmQtf3jyaVZuXJ3J9i31nhztX5l8mjH/0x+W01qOm671r9GRJztWwtepI7F4Z
+PAxa4tqrRs989VQvrKRt7JAnNgv7mt9NDKRmXMy90hnZemvUeqvHFA7g6dRLx2ND
+B48k1SWHU8ra+odXXq21j7l3umXj83DjRtEnc259ypjrWh8Zn3E+62p/XtYm30/a
+W7xW4NO+7bmZkXDO17EfLj1puptWGjXUdae2d/tUYGzmfGYWvdh4eb449sT3/gT1
+RmHK6mrYVZJeRb+P+tHy+heikUDI
+=Eo2R
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/moinkhanif
+
+==================================================================

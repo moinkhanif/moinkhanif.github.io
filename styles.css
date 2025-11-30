@@ -33,6 +33,10 @@ html {
   scroll-behavior: smooth;
 }
 
+section {
+  scroll-margin-top: 100px;
+}
+
 body {
   font-family: var(--font-main);
   background-color: var(--bg-color);

@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const isExpanded = menuToggle.getAttribute('aria-expanded') === 'true';
       menuToggle.setAttribute('aria-expanded', !isExpanded);
       mainNav.classList.toggle('active');
-      
+
       // Animate hamburger (optional simple rotation or cross)
       if (!isExpanded) {
         hamburger.style.transform = 'rotate(45deg)';
@@ -34,13 +34,13 @@ document.addEventListener('DOMContentLoaded', () => {
   // Request Resume Button
   const resumeBtn = document.getElementById('resume-btn');
   const messageInput = document.getElementById('message');
-  
+
   if (resumeBtn && messageInput) {
     resumeBtn.addEventListener('click', (e) => {
       e.preventDefault();
       const contactSection = document.getElementById('contact');
       contactSection.scrollIntoView({ behavior: 'smooth' });
-      
+
       // Pre-fill message after a short delay to allow scroll
       setTimeout(() => {
         messageInput.value = "Hi Moin, I'd like to request a copy of your resume.";
@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', () => {
       e.preventDefault();
       const targetId = this.getAttribute('href');
       if (targetId === '#') return;
-      
+
       const targetElement = document.querySelector(targetId);
       if (targetElement) {
         targetElement.scrollIntoView({
@@ -97,4 +97,52 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   `;
   document.head.appendChild(style);
+  // Formspree AJAX Submission
+  const contactForm = document.getElementById('contact-form');
+  const formStatus = document.getElementById('form-status');
+
+  if (contactForm) {
+    contactForm.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const formData = new FormData(contactForm);
+      const submitBtn = contactForm.querySelector('button[type="submit"]');
+      const originalBtnText = submitBtn.textContent;
+
+      // UI Loading State
+      submitBtn.disabled = true;
+      submitBtn.textContent = 'Sending...';
+      formStatus.textContent = '';
+      formStatus.className = 'form-status';
+
+      try {
+        const response = await fetch(contactForm.action, {
+          method: 'POST',
+          body: formData,
+          headers: {
+            'Accept': 'application/json'
+          }
+        });
+
+        if (response.ok) {
+          formStatus.textContent = 'Thanks! Your message has been sent.';
+          formStatus.classList.add('success');
+          contactForm.reset();
+        } else {
+          const data = await response.json();
+          if (Object.hasOwnProperty.call(data, 'errors')) {
+            formStatus.textContent = data.errors.map(error => error.message).join(", ");
+          } else {
+            formStatus.textContent = 'Oops! There was a problem submitting your form.';
+          }
+          formStatus.classList.add('error');
+        }
+      } catch (error) {
+        formStatus.textContent = 'Oops! There was a problem submitting your form.';
+        formStatus.classList.add('error');
+      } finally {
+        submitBtn.disabled = false;
+        submitBtn.textContent = originalBtnText;
+      }
+    });
+  }
 });

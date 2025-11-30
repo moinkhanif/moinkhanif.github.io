@@ -1,282 +1,275 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap"
-      rel="stylesheet"
-    />
-    <title>Moin's Portfolio</title>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script
-      async
-      src="https://www.googletagmanager.com/gtag/js?id=UA-64494230-3"
-    ></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag() {
-        dataLayer.push(arguments);
-      }
-      gtag("js", new Date());
 
-      gtag("config", "UA-64494230-3");
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+  <!-- SEO & Meta Tags -->
+  <title>Moin Khan | Full-Stack Web Developer</title>
+  <meta name="description"
+    content="Portfolio of Moin Khan, a Full-stack web developer passionate about building modern, responsive websites and applications." />
+  <meta name="keywords"
+    content="Moin Khan, Full-stack Developer, Web Developer, Portfolio, JavaScript, Ruby on Rails, React, HTML, CSS" />
+  <meta name="author" content="Moin Khan" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://moinkhanif.github.io/" />
+  <meta property="og:title" content="Moin Khan | Full-Stack Web Developer" />
+  <meta property="og:description"
+    content="Portfolio of Moin Khan, a Full-stack web developer passionate about building modern, responsive websites and applications." />
+  <meta property="og:image" content="https://moinkhanif.github.io/images/og-image.jpg" />
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image" />
+  <meta property="twitter:url" content="https://moinkhanif.github.io/" />
+  <meta property="twitter:title" content="Moin Khan | Full-Stack Web Developer" />
+  <meta property="twitter:description"
+    content="Portfolio of Moin Khan, a Full-stack web developer passionate about building modern, responsive websites and applications." />
+  <meta property="twitter:image" content="https://moinkhanif.github.io/images/og-image.jpg" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Source+Code+Pro:wght@400;600&display=swap"
+    rel="stylesheet" />
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="shortcut icon" href="images/logo.svg" type="image/svg+xml" />
+
+  <!-- GEO / JSON-LD Structured Data -->
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Moin Khan",
+      "url": "https://moinkhanif.github.io/",
+      "sameAs": [
+        "https://github.com/moinkhanif",
+        "https://www.linkedin.com/in/moinkhanif/",
+        "https://twitter.com/MoinKhanIF"
+      ],
+      "jobTitle": "Full-Stack Web Developer",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Freelance"
+      },
+      "description": "Full-stack web developer with a passion to build websites and apps."
+    }
     </script>
-  </head>
+</head>
 
-  <body data="prod">
-    <header>
-      <a href="./" class="alphabetM">
-        <div class="m1"></div>
-        <div class="m2"></div>
-        <div class="m3"></div>
-        <div class="m4"></div>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <a href="./" class="logo-link">
+        <img src="images/logo.svg" alt="MK Logo" class="logo-img" />
       </a>
+      <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span class="hamburger"></span>
+      </button>
       <nav class="main-nav">
         <ul>
-          <a href="./">
-            <li>Home</li>
-          </a>
-          <a href="#projects">
-            <li>Projects</li>
-          </a>
-          <a
-            href="https://docs.google.com/document/d/1-nVkz-7WMdZbjg6GcpsonGQ_vGEraERukw13Sw6yzhk/edit?usp=sharing"
-            target="_blank"
-          >
-            <li>Resume</li>
-          </a>
-          <a href="#contact">
-            <li>Contact</li>
-          </a>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><button id="resume-btn" class="nav-btn">Request Resume</button></li>
         </ul>
       </nav>
-    </header>
-    <main>
-      <section class="main-content">
-        <img src="images/undraw_moonlight_5ksn.svg" alt="welcome" class="blm" />
-        <div>
-          <h1 class="welcome">Welcome to <span>Moin</span>'s Portfolio</h1>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+      <div class="container">
+        <div class="hero-content">
+          <h1 class="hero-title">Hello, I'm <span class="highlight">Moin</span>.</h1>
+          <p class="hero-subtitle">
+            I am a Full-stack web developer, with a passion to build websites and apps.
+          </p>
+          <div class="hero-cta">
+            <a href="#projects" class="btn btn-primary">View Projects</a>
+            <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+          </div>
         </div>
-        <p class="welcome-sub">
-          I am a Full-stack web developer, with a passion to build websites and
-          apps.
-        </p>
-        <div class="contact-card">
-          <ul>
-            <li><a href="https://github.com/moinkhanif" target="_blank">GitHub</a></li>
-            <li>
-              <a href="https://www.linkedin.com/in/moinkhanif/" target="_blank">LinkedIn</a>
-            </li>
-            <li><a href="https://twitter.com/MoinKhanIF" target="_blank">Twitter</a></li>
-          </ul>
+        <div class="hero-visual">
+          <div class="visual-placeholder"></div>
         </div>
-      </section>
-      <section id="projects" class="main-sections">
-        <h2 class="section-title">Projects</h2>
-        <!-- <h2 class="nojs-title">
-          NOTE: To get a list of latest Projects, please consider enabling
-          JavaScript for this webpage.
-        </h2> -->
-        <div class="project">
-          <article>
-            <figure class="project-image">
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+      <div class="container">
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="projects-grid">
+          <!-- Project 1 -->
+          <article class="project-card">
+            <div class="project-image">
               <picture>
-                <source
-                  type="image/webp"
-                  srcset="images/quarantine-stories-rs-new.webp"
-                />
-                <source
-                  type="image/jpeg"
-                  srcset="images/quarantine-stories-rs.png"
-                />
-                <img
-                  src="images/quarantine-stories-rs.png"
-                  alt="Quarantine  Stories Screenshot"
-                />
+                <source type="image/webp" srcset="images/quarantine-stories-rs-new.webp" />
+                <img src="images/quarantine-stories-rs.png"
+                  alt="Quarantine Stories - A platform to document quarantine experiences" loading="lazy" />
               </picture>
-            </figure>
+            </div>
             <div class="project-content">
               <h3 class="project-title">Quarantine Stories</h3>
-              <p class="project-info">
-                The idea of this project is for users to document their journey
-                and experiences during quarantine in 2020. The UI of this
-                project is adapted from
-                <a
-                  href="https://www.behance.net/gallery/14554909/liFEsTlye-Mobile-version"
-                  target="_blank"
-                >
-                  liFEsTlye</a
-                >
-                by
-                <a
-                  href="https://www.behance.net/sakwadesignstudio"
-                  target="_blank"
-                  >Nelson Sakwa</a
-                >
+              <p class="project-desc">
+                A platform for users to document their journey and experiences during the 2020 quarantine. UI adapted
+                from liFEsTlye design.
               </p>
-              <div class="stack-details">
-                <span class="stack-title">Stacks used: </span> 
-                <span class="stacks">Ruby on Rails</span>
+              <div class="project-tags">
+                <span class="tag">Ruby on Rails</span>
               </div>
               <div class="project-links">
-                <a
-                  href="https://quarantine-stories.moinkhanif.dev/"
-                  target="_blank"
-                  >Live Demo</a
-                >
-                <a
-                  href="https://github.com/moinkhanif/quarantine-stories"
-                  target="_blank"
-                  >Repository</a
-                >
+                <a href="https://quarantine-stories.moinkhanif.dev/" target="_blank" rel="noopener noreferrer"
+                  class="link-btn">Live Demo</a>
+                <a href="https://github.com/moinkhanif/quarantine-stories" target="_blank" rel="noopener noreferrer"
+                  class="link-btn">GitHub</a>
               </div>
             </div>
           </article>
-        </div>
-        <div class="project">
-          <article>
-            <figure>
+
+          <!-- Project 2 -->
+          <article class="project-card">
+            <div class="project-image">
               <picture>
-                <source
-                  type="image/webp"
-                  srcset="images/flowershop-rs-new.webp"
-                />
-                <source type="image/jpeg" srcset="images/flowershop-rs.png" />
-                <img
-                  src="images/flowershop-rs.png"
-                  alt="Flower Shop Screenshot"
-                />
+                <source type="image/webp" srcset="images/flowershop-rs-new.webp" />
+                <img src="images/flowershop-rs.png" alt="Flower Shop - A mobile-first e-commerce layout"
+                  loading="lazy" />
               </picture>
-            </figure>
+            </div>
             <div class="project-content">
               <h3 class="project-title">Flower Shop</h3>
-              <p class="project-info">
-                This Solo Project was about building a flower shop with the
-                given UI. I used the mobile-first approach for this website and made my
-                way through the big screens using media queries.
+              <p class="project-desc">
+                A mobile-first flower shop website layout. Built to demonstrate responsive design principles across
+                different screen sizes.
               </p>
-              <div class="stack-details">
-                <span class="stack-title">Stacks used: </span> 
-                <span class="stacks">HTML/CSS</span>
+              <div class="project-tags">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
               </div>
               <div class="project-links">
-                <a href="https://moinkhanif.dev/flower-shop/" target="_blank"
-                  >Live Demo</a
-                >
-                <a
-                  href="https://github.com/moinkhanif/flower-shop"
-                  target="_blank"
-                  >Repository</a
-                >
+                <a href="https://moinkhanif.dev/flower-shop/" target="_blank" rel="noopener noreferrer"
+                  class="link-btn">Live Demo</a>
+                <a href="https://github.com/moinkhanif/flower-shop" target="_blank" rel="noopener noreferrer"
+                  class="link-btn">GitHub</a>
               </div>
             </div>
           </article>
-        </div>
-        <div class="project">
-          <article>
-            <figure>
+
+          <!-- Project 3 -->
+          <article class="project-card">
+            <div class="project-image">
               <picture>
-                <source
-                  type="image/webp"
-                  srcset="images/newsweek-rs-new.webp"
-                />
-                <source type="image/jpeg" srcset="images/newsweek-rs.jpg" />
-                <img
-                  src="images/newsweek-rs.jpg"
-                  alt="Newsweek Clone Screenshot"
-                />
+                <source type="image/webp" srcset="images/newsweek-rs-new.webp" />
+                <img src="images/newsweek-rs.jpg" alt="Newsweek Clone - Responsive recreation of Newsweek homepage"
+                  loading="lazy" />
               </picture>
-            </figure>
+            </div>
             <div class="project-content">
               <h3 class="project-title">Newsweek Clone</h3>
-              <p class="project-info">
-                Recreating a responsive version of
-                <a href="https://newsweek.com" target="_blank">Newsweek</a>
-                website.
+              <p class="project-desc">
+                A responsive recreation of the Newsweek website homepage, focusing on layout accuracy and
+                responsiveness.
               </p>
-              <div class="stack-details">
-                <span class="stack-title">Stacks used: </span> 
-                <span class="stacks">HTML/CSS</span>
+              <div class="project-tags">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
               </div>
               <div class="project-links">
-                <a href="https://moinkhanif.dev/newsweek-clone/" target="_blank"
-                  >Live Demo</a
-                >
-                <a
-                  href="https://github.com/moinkhanif/newsweek-clone"
-                  target="_blank"
-                  >Repository</a
-                >
+                <a href="https://moinkhanif.dev/newsweek-clone/" target="_blank" rel="noopener noreferrer"
+                  class="link-btn">Live Demo</a>
+                <a href="https://github.com/moinkhanif/newsweek-clone" target="_blank" rel="noopener noreferrer"
+                  class="link-btn">GitHub</a>
               </div>
             </div>
           </article>
-        </div>
-        <div class="project">
-          <article>
-            <figure>
+
+          <!-- Project 4 -->
+          <article class="project-card">
+            <div class="project-image">
               <picture>
                 <source type="image/webp" srcset="images/tnw-rs-new.webp" />
-                <source type="image/jpeg" srcset="images/tnw-rs.jpg" />
-                <img
-                  src="images/tnw-rs.jpg"
-                  alt="tnw responsive clone Screenshot"
-                />
+                <img src="images/tnw-rs.jpg" alt="TNW Clone - Responsive clone of The Next Web" loading="lazy" />
               </picture>
-            </figure>
+            </div>
             <div class="project-content">
               <h3 class="project-title">TNW Responsive Clone</h3>
-              <p class="project-info">
-                This is a clone of TNW ( The Next Web) webpage. The purpose of
-                this project build a clone of
-                <a href="https://thenextweb.com/" target="_blank">TNW webpage</a
-                >, replicating its responsiveness. The projects requirement and
-                an extended description can be found at
-                <a
-                  href="https://www.theodinproject.com/courses/html5-and-css3/lessons/building-with-responsive-design"
-                  target="_blank"
-                  >The Odin Project</a
-                >
+              <p class="project-desc">
+                A clone of The Next Web (TNW) homepage, replicating its responsive behavior and layout structure.
               </p>
-              <div class="stack-details">
-                <span class="stack-title">Stacks used: </span> 
-                <span class="stacks">HTML/CSS</span>
+              <div class="project-tags">
+                <span class="tag">HTML</span>
+                <span class="tag">CSS</span>
               </div>
               <div class="project-links">
-                <a
-                  href="https://moinkhanif.dev/tnw-responsive-clone/"
-                  target="_blank"
-                  >Live Demo</a
-                >
-                <a
-                  href="https://github.com/moinkhanif/tnw-responsive-clone/"
-                  target="_blank"
-                  >Repository</a
-                >
+                <a href="https://moinkhanif.dev/tnw-responsive-clone/" target="_blank" rel="noopener noreferrer"
+                  class="link-btn">Live Demo</a>
+                <a href="https://github.com/moinkhanif/tnw-responsive-clone/" target="_blank" rel="noopener noreferrer"
+                  class="link-btn">GitHub</a>
               </div>
             </div>
           </article>
         </div>
-      </section>
-      <section class="main-sections" id="contact">
-        <h2 class="section-title">Contact</h2>
-        <div class="contact-card">
-          <ul>
-            <li><a href="mailto:kmoin786@gmail.com" target="_blank">kmoin786@gmail.com</a></li>
-            <li>
-              <a href="https://www.linkedin.com/in/moinkhanif/" target="_blank">LinkedIn</a>
-            </li>
-            <li><a href="https://twitter.com/MoinKhanIF" target="_blank">Twitter</a></li>
-          </ul>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+      <div class="container">
+        <h2 class="section-title">Get In Touch</h2>
+        <p class="contact-intro">
+          Have a project in mind or just want to say hi? Fill out the form below!
+        </p>
+
+        <div class="contact-wrapper">
+          <!-- Formspree Contact Form -->
+          <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="contact-form">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required placeholder="Your Name" />
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required placeholder="Your Email" />
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" required placeholder="Your Message"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Send Message</button>
+          </form>
+
+          <div class="social-links">
+            <h3>Connect</h3>
+            <ul>
+              <li><a href="https://github.com/moinkhanif" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+              <li><a href="https://www.linkedin.com/in/moinkhanif/" target="_blank"
+                  rel="noopener noreferrer">LinkedIn</a></li>
+              <li><a href="https://twitter.com/MoinKhanIF" target="_blank" rel="noopener noreferrer">Twitter</a></li>
+            </ul>
+          </div>
         </div>
-      </section>
-    </main>
-    <footer>
-      <p>Made by Moin</p>
-    </footer>
-    <script src="./js/main.js"></script>
-  </body>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Moin Khan. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="./js/main.js"></script>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+
 </html>
